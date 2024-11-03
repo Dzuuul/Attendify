@@ -1,0 +1,13 @@
+.loginForm {
+  max-width: 200px;
+}
+.loginFormForgot {
+  float: right;
+}
+.loginFormButton {
+  width: 100%;
+}
+
+.Checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: red;
+}
