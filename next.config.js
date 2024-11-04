@@ -1,4 +1,4 @@
-const { node } = require('prop-types')
+const { node } = require("prop-types");
 
 /** @type {import('next').NextConfig} */
 module.exports = {
@@ -7,15 +7,16 @@ module.exports = {
     CRYPTO_SECRET: process.env.CRYPTO_SECRET,
   },
   node: {
-    net: 'empty'
+    net: "empty",
   },
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/login',
+        source: "/",
+        destination: "/login",
         permanent: true,
-      }
-    ]
+      },
+    ];
   },
-}
+  output: "export",
+};
